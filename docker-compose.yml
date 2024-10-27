@@ -1,0 +1,6 @@
+﻿services:
+  escape.domain:
+    image: escape.api
+    build:
+      context: .
+      dockerfile: Escape.Api/Dockerfile
