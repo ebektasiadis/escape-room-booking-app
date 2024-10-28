@@ -19,7 +19,8 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\Escape.Application\Escape.Application.csproj" />
+        <ProjectReference Include="..\Escape.Application\Escape.Application.csproj"/>
+        <ProjectReference Include="..\Escape.Infrastructure\Escape.Infrastructure.csproj"/>
     </ItemGroup>
 
 </Project>
