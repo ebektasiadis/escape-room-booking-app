@@ -4,3 +4,15 @@
     build:
       context: .
       dockerfile: Escape.Api/Dockerfile
+  escape.npgsql:
+    image: postgres:17
+    environment:
+      POSTGRES_USER: example
+      POSTGRES_PASSWORD: example
+      POSTGRES_DATABASE: escapeApp
+    ports:
+      - "5432:5432"
+    volumes:
+      - database:/var/lib/postgresql/data
+volumes:
+  database:
