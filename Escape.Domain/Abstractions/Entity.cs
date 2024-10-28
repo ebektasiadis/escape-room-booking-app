@@ -2,8 +2,6 @@ namespace Escape.Domain.Abstractions;
 
 public abstract class Entity
 {
-    public Guid Id { get; private set; }
-
     protected Entity(Guid id)
     {
         Id = id;
@@ -12,4 +10,6 @@ public abstract class Entity
     protected Entity()
     {
     }
+
+    public Guid Id { get; private set; }
 }
